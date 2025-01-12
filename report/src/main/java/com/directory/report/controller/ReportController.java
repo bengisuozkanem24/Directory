@@ -18,7 +18,7 @@ public class ReportController {
     @Autowired
     private ReportService reportService;
 
-    @GetMapping
+    @PostMapping
     public ResponseEntity<Report> requestReport() {
         return ResponseEntity.ok(reportService.createReport());
     }
